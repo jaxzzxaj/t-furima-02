@@ -51,3 +51,8 @@ AllCops:
 #日本語のコメントを許可
   Style/AsciiComments:
     Enabled: false
+
+#クラスやモジュールの定義前に、それらの説明書きがあるかチェックする
+  Style/Documentation:
+    Enabled: false
+
