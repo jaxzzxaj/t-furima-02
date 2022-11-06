@@ -31,3 +31,7 @@ AllCops:
 #メソッドの行数の最大値を設定
   Metrics/MethodLength:
     Max: 30
+
+#ネストの最大数を設定
+  Metrics/BlockNesting:
+    Max: 5
