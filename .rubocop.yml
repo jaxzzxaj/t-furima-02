@@ -11,6 +11,12 @@ AllCops:
   - "spec/spec_helper.rb"
 
 #RSpecは一つのブロックあたりの行数が多くなるため、チェックの除外から外す
+#ブロック内の行数をチェックする
   Metrics/BlockLength:
     Exclude:
       "spec/**/*"
+
+#rubocopが計算して基準値を超えると警告を出す（上記頭文字をとって’Abc’）
+  Metrics/AbcSize:
+    Max: 50
+
