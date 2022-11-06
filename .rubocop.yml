@@ -56,3 +56,7 @@ AllCops:
   Style/Documentation:
     Enabled: false
 
+#文字列に値が代入されていないかチェックする
+  Style/FrozenLiteralComment:
+    Enabled: false
+
