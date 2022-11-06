@@ -45,3 +45,16 @@
 -belongs_to :prefecture
 -belongs_to :delivery_day
 -------end--------
+
+## orders テーブル
+
+| Column     | Type       | Options                        |
+| :--------- | :--------- | :----------------------------- |
+| user       | references | null: false, foreign_key: true |
+| product    | references | null: false, foreign_key: true |
+
+### Association
+
+-belongs_to :user
+-belongs_to :product
+-has_one :address
