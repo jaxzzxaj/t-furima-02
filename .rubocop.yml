@@ -1,3 +1,6 @@
 #決り文句
 AllCops:
+#１行あたりの文字数をチェックする
+  Layout/LineLength:
+    Max: 130
 
