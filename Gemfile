@@ -41,7 +41,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   # コードの修正・確認を助けてくれるgem：rubocop -aで起動
-  gem 'rubocop', require :false
+  gem 'rubocop', require: false
 end
 
 group :test do
