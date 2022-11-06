@@ -27,3 +27,7 @@ AllCops:
 #メソッド内が複雑すぎるかチェックする
   Metrics/PerceivedComplexity:
     Max: 8
+
+#メソッドの行数の最大値を設定
+  Metrics/MethodLength:
+    Max: 30
