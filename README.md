@@ -1,24 +1,21 @@
-# README
+## 概要
+過去に作ったアプリケーションの制作とgithubの復習のためにつくってます。
+今回の目標期限は、２週間。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## users テーブル
 
-Things you may want to cover:
+| Column             | Type   | Options     |
+| :----------------- | :----- | :---------- |
+| nickname           | string | null: false |
+| email              | string | null: false |
+| encrypted_password | string | null: false |
+| first_name_kanji   | string | null: false |
+| first_name_ruby    | string | null: false |
+| last_name_kanji    | string | null: false |
+| last_name_ruby     | string | null: false |
+| date_of_birth      | date   | null: false |
 
-* Ruby version
+### Association
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+-has_many :items
+-has_many :orders
