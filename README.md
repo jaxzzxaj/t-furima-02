@@ -58,3 +58,22 @@
 -belongs_to :user
 -belongs_to :product
 -has_one :address
+
+## addresses テーブル
+
+| Column        | Type       | Options                        |
+| :-------------| :--------- | :----------------------------- |
+| postal_code   | string     | null: false                    |
+| prefecture_id | integer    | null: false                    |
+| areas         | string     | null: false                    |
+| address       | string     | null: false                    |
+| building      | string     |                                |
+| phone         | string     | null: false                    |
+| order         | references | null: false, foreign_key: true |
+
+### Association
+
+-belongs_to :order
+---activeHash---
+belongs_to :prefecture
+------end-------
