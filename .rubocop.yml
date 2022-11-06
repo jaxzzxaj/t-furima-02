@@ -39,3 +39,7 @@ AllCops:
 #クラスの行数のチェックを無効にする
   Metrics/ClassLength:
     Enable: false
+
+#クラス内のクラスが定義されていないかチェックする（<div class= ></div>は無効
+  Style/ClassAndModuleChildren:
+    Enable: false
