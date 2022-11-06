@@ -63,3 +63,7 @@ AllCops:
 # ％i（）構文を使用していないシンボルで構成される配列リテラルをチェック（無効）
   Style/SymbolArray:
     Enabled: false
+
+# メソッドパラメータ名の最小文字数を設定
+  Naming/MethodParameterName:
+    MinNameLength: 1
