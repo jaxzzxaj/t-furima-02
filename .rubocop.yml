@@ -22,4 +22,8 @@ AllCops:
 
 #ifやforを使いすぎて複雑になっていないかチェックする
   Metrics/CyclomaticComplexity:
+    Max: 10
+
+#メソッド内が複雑すぎるかチェックする
+  Metrics/PerceivedComplexity:
     Max: 8
