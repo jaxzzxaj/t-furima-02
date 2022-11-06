@@ -57,3 +57,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #エラーが発生したときに便利（動かせたいコードの範囲を指定してbindingpryとうつ）
 gem 'pry-rails'
+
+#viewで使う画像を編集する事ができる
+gem 'mini_magick'
+gem 'image_processing', '~> 1.2'
