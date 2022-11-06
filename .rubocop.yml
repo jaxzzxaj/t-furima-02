@@ -38,12 +38,16 @@ AllCops:
 
 #クラスの行数のチェックを無効にする
   Metrics/ClassLength:
-    Enable: false
+    Enabled: false
 
 #クラス内のクラスが定義されていないかチェックする（<div class= ></div>は無効
   Style/ClassAndModuleChildren:
-    Enable: false
+    Enabled: false
 
 #空メソッドの場合、１行のスタイルにしない。（app/controllers/0000.rbのdef アクション名 endという形は無効）
   Style/EmptyMethod:
     EnforcesStyle: expanded
+
+#日本語のコメントを許可
+  Style/AsciiComments:
+    Enabled: false
