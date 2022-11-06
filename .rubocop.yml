@@ -35,3 +35,7 @@ AllCops:
 #ネストの最大数を設定
   Metrics/BlockNesting:
     Max: 5
+
+#クラスの行数のチェックを無効にする
+  Metrics/ClassLength:
+    Enable: false
