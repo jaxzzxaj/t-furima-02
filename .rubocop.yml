@@ -43,3 +43,7 @@ AllCops:
 #クラス内のクラスが定義されていないかチェックする（<div class= ></div>は無効
   Style/ClassAndModuleChildren:
     Enable: false
+
+#空メソッドの場合、１行のスタイルにしない。（app/controllers/0000.rbのdef アクション名 endという形は無効）
+  Style/EmptyMethod:
+    EnforcesStyle: expanded
