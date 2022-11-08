@@ -27,7 +27,7 @@ class User < ApplicationRecord
   VALID_RUBY_REGEX = /\A[ァ-ヶ]+\z/
 
 
-
+  #箱を使って各columnの記入の仕方を指定し、エラーが発生したときはcolumn+メッセージを出すよう設定
   validates_format_of :email, with: VALID_EMAIL_REGEX, message: 'には「@」を含めてください'
   validates_format_of :password, with: VALID_PASSWPRD_REGEX, message: 'には英語と数字の両方で入力してください'
   validates_format_of :first_name_kanji, with: VALID_KANJI_REGEX, message: 'には全角カタカナ、ひらがな、漢字で入力してください'
