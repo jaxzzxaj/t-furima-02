@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  #スコープをしている
   devise_for :users
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  #デフォルト→  devise_for{:users path: 'users' method: 'devise'}
 end
