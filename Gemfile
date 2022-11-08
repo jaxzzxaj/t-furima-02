@@ -61,3 +61,6 @@ gem 'pry-rails'
 #viewで使う画像を編集する事ができる
 gem 'mini_magick'
 gem 'image_processing', '~> 1.2'
+
+#新規登録、ログイン、未ログインの助けになる
+gem 'devise'
