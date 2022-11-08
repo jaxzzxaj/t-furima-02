@@ -10,7 +10,7 @@ class User < ApplicationRecord
   devise  :database_authenticatable, :registerable,
           :recoverable, :rememberable, :validatable
 
-#userが新規登録/ログイン時に打つ必須項目を取得できるようにする
+  #userが新規登録/ログイン時に打つ必須項目を取得できるようにする
   with options presence: true do
     validates :nickname
     validates :first_name_kanji
@@ -20,6 +20,7 @@ class User < ApplicationRecord
     validates :date_of_birth
   end
 
+  #上から順に"@"は必須。パスワードは英数字が必須。全角カタカナ、ひらがな、漢字必須。全角カタカナのみ。
   VALID_EMAIL_REGEX = /@.+/
   VALID_PASSWORD_REGEX = /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i.freeze
   VALID_KANJI_REGEX = /\A[ぁ-んァ-ヶ一-龥々]+\z/
