@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  #条件：devise関連の画面へ遷移したとき。処理内容:configure_permitted_parametersをしてください
   before_action :configure_permitted_parameters, if: :devise_controller?
 
 
