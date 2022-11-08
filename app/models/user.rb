@@ -19,4 +19,9 @@ class User < ApplicationRecord
     validates :last_name_ruby
     validates :date_of_birth
   end
+
+  VALID_EMAIL_REGEX = /@.+/
+  VALID_PASSWORD_REGEX = /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i.freeze
+  VALID_KANJI_REGEX = /\A[ぁ-んァ-ヶ一-龥々]+\z/
+  VALID_RUBY_REGEX = /\A[ァ-ヶ]+\z/
 end
