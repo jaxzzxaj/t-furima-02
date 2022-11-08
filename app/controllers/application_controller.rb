@@ -1,4 +1,6 @@
 class ApplicationController < ActionController::Base
+  before_action :configure_permitted_parameters, if: :devise_controller?
+
 
   #devise_parameter_sanitizer＝値を取得してくれるメソッド。.permit（どの時？,keys:[:どの値？])
   def configure_permitted_parameters
