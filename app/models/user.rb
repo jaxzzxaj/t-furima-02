@@ -10,7 +10,7 @@ class User < ApplicationRecord
   devise  :database_authenticatable, :registerable,
           :recoverable, :rememberable, :validatable
 
-
+#userが新規登録/ログイン時に打つ必須項目を取得できるようにする
   with options presence: true do
     validates :nickname
     validates :first_name_kanji
