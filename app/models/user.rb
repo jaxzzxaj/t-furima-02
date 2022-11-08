@@ -7,6 +7,16 @@ class User < ApplicationRecord
   #recoverable=パスワードをリセットして通知してくれる
   #rememberable=userを記憶するためのトークンを生成・削除してくれる
   #validatable=メールやパスワードのバリデーションを提供してくれる
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable
+  devise  :database_authenticatable, :registerable,
+          :recoverable, :rememberable, :validatable
+
+
+  with options presence: true do
+    validates :nickname
+    validates :first_name_kanji
+    validates :first_name_ruby
+    validates :last_name_kanji
+    validates :last_name_ruby
+    validates :date_of_birth
+  end
 end
