@@ -11,7 +11,7 @@ class User < ApplicationRecord
           :recoverable, :rememberable, :validatable
 
   #userが新規登録/ログイン時に打つ必須項目を取得できるようにする
-  with options presence: true do
+  with_options presence: true do
     validates :nickname
     validates :first_name_kanji
     validates :first_name_ruby
@@ -35,3 +35,4 @@ class User < ApplicationRecord
   validates_format_of :first_name_ruby, with: VALID_RUBY_REGEX, message: 'には全角カタカナのみで入力してください'
   validates_format_of :last_name_ruby, with: VALID_RUBY_REGEX, message: 'には全角カタカナのみで入力してください'
 end
+
