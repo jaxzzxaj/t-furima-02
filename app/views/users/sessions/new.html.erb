@@ -9,24 +9,32 @@
     </h1>
   </div>
 
-    <div class="form-wrap">
-    <div class="form-text">hoge</div>
-    <div class="form-must">必須</div>
-    <%= f.text_area :nickname, class:"input-name-wrap", id:"form-input", placeholder:"hoge",maxlength:"hoge" %>
+  <div class='login-flash-message'>
+    <%= flash[:notice] %>
+    <%= flash[:alert] %>
   </div>
 
-    <div class="form-wrap">
-    <div class="form-text">hoge</div>
-    <div class="form-must">必須</div>
-    <%= f.text_area :nickname, class:"input-name-wrap", id:"form-input", placeholder:"hoge",maxlength:"hoge" %>
-  </div>
+    <div class="form-group">
+      <div class="form-wrap">
+        <div class="form-text">メールアドレス</div>
+        <div class="form-must">必須</div>
+      </div>
+      <%= f.email_field :email, class:"input-name-wrap", id:"email", placeholder:"PC・携帯どちらでも可", autofocus: true%>
+    </div>
+
+    <div class="form-group">
+      <div class="form-wrap">
+        <label class="form-text">パスワード</label>
+        <span class="form-must">必須</span>
+      </div>
+      <%= f.password_field :password, class:"input-name-wrap", id:"password" ,placeholder:""%>
+    </div>
 
   <div class='login-btn'>
-    <%= f.submit "hoge" ,class:"login-red-btn" %>
+    <%= f.submit "ログイン" ,class:"login-red-btn" %>
   </div>
+</div>
 
-
-  <div class="">
 <% end %>
 
 <%= render "shared/devise-footer"%>
