@@ -2,6 +2,31 @@
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
+<div class='form-wrap'>
+  <div class='form-header'>
+    <h1 class='form-header-text'>
+      会員情報入力
+    </h1>
+  </div>
+
+    <div class="form-wrap">
+    <div class="form-text">hoge</div>
+    <div class="form-must">必須</div>
+    <%= f.text_area :nickname, class:"input-name-wrap", id:"form-input", placeholder:"hoge",maxlength:"hoge" %>
+  </div>
+
+    <div class="form-wrap">
+    <div class="form-text">hoge</div>
+    <div class="form-must">必須</div>
+    <%= f.text_area :nickname, class:"input-name-wrap", id:"form-input", placeholder:"hoge",maxlength:"hoge" %>
+  </div>
+
+  <div class='login-btn'>
+    <%= f.submit "hoge" ,class:"login-red-btn" %>
+  </div>
+
+
+  <div class="">
 <% end %>
 
 <%= render "shared/devise-footer"%>

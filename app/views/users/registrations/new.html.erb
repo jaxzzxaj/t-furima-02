@@ -5,6 +5,57 @@
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "users/shared/error_messages", resource: resource %>
 
+  <div class="form-wrap">
+    <div class="form-header">
+      <div class="form-header-text">会員登録</div>
+    </div>
+  </div>
+
+  <div class="form-wrap">
+    <div class="form-text">hoge</div>
+    <div class="form-must">必須</div>
+    <%= f.text_area :nickname, class:"input-name-wrap", id:"form-input", placeholder:"hoge",maxlength:"hoge" %>
+  </div>
+
+    <div class="form-wrap">
+    <div class="form-text">hoge</div>
+    <div class="form-must">必須</div>
+    <%= f.text_area :nickname, class:"input-name-wrap", id:"form-input", placeholder:"hoge",maxlength:"hoge" %>
+  </div>
+
+    <div class="form-wrap">
+    <div class="form-text">hoge</div>
+    <div class="form-must">必須</div>
+    <%= f.text_area :nickname, class:"input-name-wrap", id:"form-input", placeholder:"hoge",maxlength:"hoge" %>
+  </div>
+
+    <div class="form-wrap">
+    <div class="form-text">hoge</div>
+    <div class="form-must">必須</div>
+    <%= f.text_area :nickname, class:"input-name-wrap", id:"form-input", placeholder:"hoge",maxlength:"hoge" %>
+  </div>
+
+    <div class="form-wrap">
+    <div class="form-text">hoge</div>
+    <div class="form-must">必須</div>
+    <%= f.text_area :nickname, class:"input-name-wrap", id:"form-input", placeholder:"hoge",maxlength:"hoge" %>
+  </div>
+
+    <div class="form-wrap">
+    <div class="form-text">hoge</div>
+    <div class="form-must">必須</div>
+    <%= f.text_area :nickname, class:"input-name-wrap", id:"form-input", placeholder:"hoge",maxlength:"hoge" %>
+  </div>
+
+    <div class="form-wrap">
+    <div class="form-text">hoge</div>
+    <div class="form-must">必須</div>
+    <%= f.text_area :nickname, class:"input-name-wrap", id:"form-input", placeholder:"hoge",maxlength:"hoge" %>
+  </div>
+
+  <div class='login-btn'>
+    <%= f.submit "hoge" ,class:"login-red-btn" %>
+  </div>
 
 <% end %>
 
