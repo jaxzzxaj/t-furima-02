@@ -10,6 +10,8 @@ class User < ApplicationRecord
   devise  :database_authenticatable, :registerable,
           :recoverable, :rememberable, :validatable
 
+  has_many :items
+
   #userが新規登録/ログイン時に打つ必須項目を取得できるようにする
   with_options presence: true do
     validates :nickname
