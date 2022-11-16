@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   #デフォルト→  devise_for{:users path: 'users' method: 'devise'}
 
   root to: "product#index"
-  resources :products, only:[:index, :new, :create]
+  resources :products
 end
